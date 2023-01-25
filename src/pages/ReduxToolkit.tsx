@@ -155,6 +155,27 @@ import { RootState } from '../redux/store';
 const products  = useSelector((state: RootState) => state.products.products)
 `}
     </Highlight>
+    <Typography>To use actions from reducer, import actions and useDispatch.</Typography>
+    <Highlight className="javascript">
+        {`import { AppDispatch } from "./redux/store";
+import { productActions } from "./redux/slices/productSlice";
+
+// in functional component
+const dispatch = useDispatch();
+// then use dispatch
+() => dispatch(productAction.sortByName())`}
+    </Highlight>
+    <Typography>
+        To use actions related to thunk
+    </Typography>
+    <Highlight className="javascript">
+        {`import { fetchProductData } from "./redux/thunk/products";
+//in functional component
+const dispatch = useDispatch<AppDispatch>();
+useEffect(() => {
+    dispatch(fetchProductData());
+}, [dispatch]);`}
+        </Highlight>
     </Box>
   );
 };
