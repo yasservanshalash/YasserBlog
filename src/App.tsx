@@ -36,7 +36,7 @@ const posts = [{
   postImage: "expressjs"
 }]
 function App() {
-  const [keyword, setKeyword] = useState('');
+  const [title, setTitle] = useState('');
 
   return (
     <div className="App">
