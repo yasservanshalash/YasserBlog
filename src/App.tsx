@@ -12,6 +12,7 @@ import FirebaseReact from './pages/FirebaseReact';
 // BLOG POSTS --------------------------------
 import './App.css'
 import "../node_modules/highlight.js/styles/base16/porple.css"
+import ExpressJs from './pages/ExpressJs';
 
 const posts = [{
   postId: 1,
@@ -28,6 +29,11 @@ const posts = [{
   postTitle: "Firebase React",
   postLink: "firebase-react",
   postImage: "firebasereact"
+}, {
+  postId: 4,
+  postTitle: "Express JS",
+  postLink: "express-js",
+  postImage: "expressjs"
 }]
 function App() {
 
@@ -40,7 +46,8 @@ function App() {
         <Route path="/posts/fetch-url" element={<FetchUrl />} />
         <Route path='/posts/redux-toolkit' element={<ReduxToolkit />} />
         <Route path='/posts/firebase-react' element={<FirebaseReact />} />
-      </Routes>
+        <Route path="/posts/express-js" element={<ExpressJs />} />
+       </Routes>
     </div>
   )
 }
