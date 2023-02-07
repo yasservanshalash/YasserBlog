@@ -73,7 +73,7 @@ root.render(
         rate: number,
         count: number,
     },
-    title: string
+    title: string,
     quantity?: number
 }`}
      </Highlight>
