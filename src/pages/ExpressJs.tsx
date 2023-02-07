@@ -5,7 +5,7 @@ import "./ExpressJs.css";
 import ExpressImg from "../assets/expressjs.png";
 const ExpressJs = () => {
   return (
-    <Box sx={{ width: "1000px" }}>
+    <Box sx={{ width: "1280px" }}>
       <img src={ExpressImg} />
       <Typography>
         Express JS is built on top of nodeJS and makes building an API way
