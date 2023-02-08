@@ -9,7 +9,7 @@ type Post = {
     postImage: string;
 }
 
-const Home = ({posts, title} : {posts: Post[], title: string}) => {
+const Home = ({posts, keyword} : {posts: Post[], keyword: string}) => {
   return (
     <div>
       <Box>
@@ -20,7 +20,7 @@ const Home = ({posts, title} : {posts: Post[], title: string}) => {
       </Box>
         <Box>
             {
-                posts.filter((post) => post.postTitle.toLocaleLowerCase().includes(title)).map((post) => {
+                posts.filter((post) => post.postTitle.toLocaleLowerCase().includes(keyword)).map((post) => {
                     return(
                         <Box key={post.postId}>
                             <Typography variant="h6" component={Link} to={`/posts/${post.postLink}`}>{post.postTitle}</Typography>

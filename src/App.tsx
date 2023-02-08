@@ -36,14 +36,14 @@ const posts = [{
   postImage: "expressjs"
 }]
 function App() {
-  const [title, setTitle] = useState('');
+  const [keyword, setKeyword] = useState('');
 
   return (
     <div className="App">
-      <NavBar setTitle={setTitle}/>
+      <NavBar setKeyword={setKeyword}/>
       <Routes>
 
-        <Route path="/" element={<Home posts={posts} title={title}/>} />
+        <Route path="/" element={<Home posts={posts} keyword={keyword}/>} />
         <Route path="/posts/fetch-url" element={<FetchUrl />} />
         <Route path='/posts/redux-toolkit' element={<ReduxToolkit />} />
         <Route path='/posts/firebase-react' element={<FirebaseReact />} />

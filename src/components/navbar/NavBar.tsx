@@ -1,9 +1,9 @@
 import React from 'react'
 import { AppBar, Box, InputBase, Toolbar, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
-const NavBar = ({setTitle}: {setTitle: Function}) => {
-  const changeHandler = (e) => {
-    setTitle(e.target.value);
+const NavBar = ({setKeyword}: {setKeyword: Function}) => {
+  const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setKeyword(e.target.value);
   }
   return (
     <AppBar color='inherit'>
