@@ -215,7 +215,7 @@ export default router
 `}
         </Highlight>
         <Typography>
-            {`You should be set. Test with postman.`}
+            {`Remember to add router in app.ts if you want to add a new collection. You should be set. Test with postman.`}
         </Typography>
     </Box>
 
